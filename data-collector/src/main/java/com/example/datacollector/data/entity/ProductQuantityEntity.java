@@ -33,6 +33,7 @@ public class ProductQuantityEntity {
     private Long serialId;
 
     //From {Kafka message..."data": }
+    @Column(name = "product_weight")
     private Float productWeight;
 
     //creation ts, update ts

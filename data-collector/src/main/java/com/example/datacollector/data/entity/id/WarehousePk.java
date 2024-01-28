@@ -16,9 +16,9 @@ import java.io.Serializable;
 @EqualsAndHashCode
 public class WarehousePk implements Serializable {
     @Id
-    @Column(name="system_code", columnDefinition = "varchar(128)")
+    @Column(name="stock_id", columnDefinition = "varchar(128)")
     private String stockId;
     @Id
-    @Column(name="prime_id", columnDefinition = "varchar(128)")
+    @Column(name="code", columnDefinition = "varchar(128)")
     private String code;
 }

@@ -36,11 +36,11 @@ public class WarehouseEntity {
     private String code;
 
     //From {Kafka message..."data": }
-    @JsonProperty("id")
+    @Column(name="id")
     private String id;
-    @JsonProperty("productId")
+    @Column(name="product_id")
     private String productId;
-    @JsonProperty("productName")
+    @Column(name="product_name")
     private String productName;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.REMOVE, CascadeType.MERGE}, orphanRemoval = true)
